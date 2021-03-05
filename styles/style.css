@@ -3,3 +3,102 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* Global classes */
+.wrapper{
+    margin: 0 auto;
+    max-width: 1140px;
+}
+/* Fonts */
+.ubuntuR{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+.ubuntuB{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+.robotoR{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.robotoB{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* Menu */
+.menuBoard{
+    background-color: white;
+}
+.menuContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0px;
+}
+.menuContainer > address{
+    font-style: normal;
+}
+.menuHeadContainer > img{
+    width: 71px;
+    height: 53px;
+}
+.menuHeadContainer{
+    display: flex;
+    flex-basis: 55%;
+    justify-content: space-between;
+}
+.navBarHeader{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLink{
+    text-decoration: none;
+    color: #2B2B2B;
+    font-size: 16px;
+    padding: 0px 16px;
+}
+.telephoneNumberHead > a{
+    text-decoration: none;
+    color: #2B2B2B;
+    font-size: 16px;
+}
+.telephoneNumberHead > p{
+    color: #2B2B2B;
+    font-size: 14px;
+}
+
+/*Promo*/
+.promoBoard{
+    background-image: url(../media/img/Rectangle\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.promoBoard > article{
+    background: rgba(53, 53, 53, 0.5);
+}
+.promoBox{
+    padding: 125px 0px;
+    display: flex;
+    flex-flow: column;
+}
+.promoContainer{
+    width: 50%;
+}
+.promoTitle{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 13px;
+}
+.promoDescrip{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 33px;
+}
+.promoButtonContainer{
+    display: flex;
+}
