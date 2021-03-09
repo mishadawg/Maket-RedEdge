@@ -147,7 +147,6 @@
     height: 243px;
     background: #FFFFFF;
     border: 1px solid #D8D8D8;
-    
 }
 .newsSelf:nth-of-type(1){
     position: relative;
@@ -212,6 +211,9 @@
     background: #D51522;
     cursor: pointer;
 }
+.selected{
+    background: #CACACA;
+}
 .pagNavSelf:hover{
     transition: 0.3s;
     background: #CACACA;
@@ -239,4 +241,17 @@
 }
 .menuFootContainer{
     flex-basis: 50%;
+}
+
+@media(max-width: 1157px){
+    .newsSelf {
+        flex-basis: 45%;
+    }
+    .newsSelf:nth-of-type(3)::before{
+        right: 0px;
+    }
+    .wrapper{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
