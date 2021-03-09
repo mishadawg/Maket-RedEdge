@@ -1,14 +1,23 @@
 // carusel
 let arrOfPag = document.getElementsByClassName('pagNavSelf');
 let arrOfNews = document.getElementsByClassName('newsSelf');
+let caruselSelf = document.getElementById('carusel');
+let widthCard = 349;
+let count = 3;
+let position = 0;
+
+//TODO .style.marginleft либо - либо +
+// убрать эти рамки на другой элемент
+
 // install
 for (let i = 0; i < arrOfPag.length; i++) {
     arrOfPag[i].addEventListener('click',carusel,false);
 }
-// functions
+// function main
 function carusel(e) {
     selection(e);
 }
+// additional func
 function deletAllclasses() {
     for (let l = 0; l < arrOfPag.length; l++) { 
         arrOfPag[l].classList.remove('selected');
