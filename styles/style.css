@@ -138,9 +138,10 @@
 }
 .newsContainer{
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: nowrap;
     width: 9999px;
+    /* speed of slide */
+    transition: margin-left 2s;
 }
 /* carusel */
 .wrapperCarusel{
@@ -151,8 +152,7 @@
     align-items: center;
 }
 .newsSelf{
-    padding: 34px 0px;
-    padding-left: 27px; 
+    padding: 34px 27px;
     width: 349px;
     height: 243px;
     background: #FFFFFF;

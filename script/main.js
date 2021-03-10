@@ -5,8 +5,7 @@ let caruselSelf = document.getElementById('carusel');
 let widthCard = 349;
 let count = 3;
 let position = 0;
-
-//TODO .style.marginleft либо - либо +
+//TODO
 // убрать эти рамки на другой элемент
 
 // install
@@ -16,8 +15,18 @@ for (let i = 0; i < arrOfPag.length; i++) {
 // function main
 function carusel(e) {
     selection(e);
+    checkSelect();
 }
 // additional func
+function checkSelect() {
+    if (arrOfPag[0].classList.contains('selected') == true){
+        caruselSelf.style.marginLeft = '0px';
+    }else if (arrOfPag[1].classList.contains('selected') == true){
+        caruselSelf.style.marginLeft = '-1145px';
+    }else if (arrOfPag[2].classList.contains('selected') == true){
+        caruselSelf.style.marginLeft = '-2315px';
+    }  
+}
 function deletAllclasses() {
     for (let l = 0; l < arrOfPag.length; l++) { 
         arrOfPag[l].classList.remove('selected');
