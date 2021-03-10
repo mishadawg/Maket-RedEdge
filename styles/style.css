@@ -271,7 +271,7 @@
         padding-right: 16px;
     }
     .wrapperCarusel {
-        width: 100%;
+        width: 97%;
     }
 }
 @media(max-width: 1024px){
@@ -295,6 +295,9 @@
     .wrapperCarusel::after {
         right: 0px;
     }
+    .wrapperCarusel {
+        width: 100%;
+    }
 }
 @media(max-width: 767px){
     .menuHeadContainer{
@@ -305,5 +308,60 @@
     }
     .burgerLogoCompany{
         display: block;
+        margin-left: 100px;
+    }
+}
+@media(max-width: 750px){
+    .newsContainer {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .wrapperCarusel::before,.wrapperCarusel::after,.menuFootContainer,.pagNavSelf{
+        display: none;
+    }
+    .wrapperCarusel {
+        overflow:auto;
+        height: 100%;
+    }
+    .newsSelf:nth-child(even),.newsSelf:nth-child(4){
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .newsSelf:nth-child(odd){
+        margin-left:6px;
+        margin-right:6px;
+    }
+    .containerImgFoot {
+        flex-basis: auto;
+    }
+    .footerContainer {
+        justify-content: center;
+    }
+    .menuFootBoard {
+        padding: 25px 0px;
+    }
+}
+@media(max-width: 425px){
+    .newsSelf{
+        min-width: 280px;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .promoBox {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .promoTitle {
+        font-size: 32px;
+    }
+    .promoDescrip {
+        font-size: 16px;
+        padding-right: 0px;
+    }
+}
+@media(max-width: 320px){
+    .burgerLogoCompany{
+        margin-left:75px;
     }
 }

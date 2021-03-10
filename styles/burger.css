@@ -10,7 +10,7 @@
 }
 .wrapper__checkbox:checked ~ .wrapper__button .wrapper__button-line:nth-child(1) {
     transform: rotate(45deg);
-    top: 8px;  
+    top: 14px;  
 }
 .wrapper__checkbox:checked ~ .wrapper__button .wrapper__button-line:nth-child(2) {
     opacity: 0;  
@@ -28,24 +28,24 @@
     top: 20px;
     left: 20px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 17;
 }
 .wrapper__button-line {
     display: block;
-    width: 30px;
-    height: 3px;
-    border-radius: 5px;
-    background: #000;
+    width: 48px;
+    height: 6px;
+    background: #D51522;
     margin: 2px 0;
     position: relative;  
     transition: all .2s ;
 }
 .wrapper__menu {
+    z-index: 16;
     position: fixed;
     top: 0;
     right: -100%;
     width: 250px;
-    height: 500px;
+    height: 100vh;
     background: white;
     display: flex;
     flex-direction: column;
@@ -64,6 +64,28 @@
 }
 .wrapper__menu-link:hover {
     padding-right: 20px;
+}
+.containerLinkBurger{
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 667px;
+    width: 100%;
+
+}
+.burgerAddress{
+    height: 667px;
+    width: 100%;
+    background: #211F2A;
+    padding:36px 17px;
+}
+.burgerAddress > a,.burgerAddress > p{
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+}
+.burgerAddress > a{
+    margin-bottom: 15px;
 }
 @media(max-width: 767px){
     .wrapperBurger {
