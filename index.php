@@ -1,3 +1,6 @@
+<?php
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/data.php';
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -93,67 +96,13 @@
             <h2 class="newsMainTitle ubuntuB">Новости</h2>
             <div class="wrapperCarusel">
                 <div id="carusel" class="newsContainer">
-                    <div class="newsSelf">
-                        <p class="dateNews robotoR">15.10.2020</p>
-                        <h3 class="newsTitle robotoB">
-                            Акции на размещение баннерного
-                            панно 20% до конца июля
-                        </h3>
-                        <button class="newsButton ubuntuR">Подробнее</button>
-                    </div>
-                    <div class="newsSelf">
-                        <p class="dateNews robotoR">10.10.2020</p>
-                        <h3 class="newsTitle robotoB">
-                            Мы работаем в обычном режиме
-                            с 15 июня!
-                        </h3>
-                        <button class="newsButton ubuntuR">Подробнее</button>
-                    </div>
-                    <div class="newsSelf">
-                        <p class="dateNews robotoR">8.10.2020</p>
-                        <h3 class="newsTitle robotoB">Как правильно подобрать рекламный канал?</h3>
-                        <button class="newsButton ubuntuR">Подробнее</button>
-                    </div>
-                    <!-- hidden 1 -->
-                    <div class="newsSelf">
-                        <p class="dateNews robotoR">13.09.2021</p>
-                        <h3 class="newsTitle robotoB">
-                            Баннер который принесет прибыль
-                        </h3>
-                        <button class="newsButton ubuntuR">Подробнее</button>
-                    </div>
-                    <div class="newsSelf">
-                        <p class="dateNews robotoR">12.12.2021</p>
-                        <h3 class="newsTitle robotoB">
-                            Достигаем отметки 1000 довольных клиентов
-                        </h3>
-                        <button class="newsButton ubuntuR">Подробнее</button>
-                    </div>
-                    <div class="newsSelf">
-                        <p class="dateNews robotoR">9.11.2021</p>
-                        <h3 class="newsTitle robotoB">Оцениваем ютуб каналы известных блоггеров</h3>
-                        <button class="newsButton ubuntuR">Подробнее</button>
-                    </div>
-                    <!-- hidden 2 -->
-                    <div class="newsSelf">
-                        <p class="dateNews robotoR">16.11.2021</p>
-                        <h3 class="newsTitle robotoB">
-                            Рекламный слоган и не только
-                        </h3>
-                        <button class="newsButton ubuntuR">Подробнее</button>
-                    </div>
-                    <div class="newsSelf">
-                        <p class="dateNews robotoR">11.11.2021</p>
-                        <h3 class="newsTitle robotoB">
-                            У нас открылось кафе в офисе!
-                        </h3>
-                        <button class="newsButton ubuntuR">Подробнее</button>
-                    </div>
-                    <div class="newsSelf">
-                        <p class="dateNews robotoR">8.10.2020</p>
-                        <h3 class="newsTitle robotoB">Как правильно подобрать рекламный канал?</h3>
-                        <button class="newsButton ubuntuR">Подробнее</button>
-                    </div>
+                    <?php foreach ($data->news as $value) { ?>
+                        <div class="newsSelf">
+                            <p class="dateNews robotoR"> <?= $value->date ?> </p>
+                            <h3 class="newsTitle robotoB"> <?= $value->title ?> </h3>
+                            <button class="newsButton ubuntuR">Подробнее</button>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
             <ul class="containerOfPagNavi">
