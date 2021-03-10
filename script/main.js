@@ -5,9 +5,6 @@ let caruselSelf = document.getElementById('carusel');
 let widthCard = 349;
 let count = 3;
 let position = 0;
-//TODO
-// убрать эти рамки на другой элемент
-
 // install
 for (let i = 0; i < arrOfPag.length; i++) {
     arrOfPag[i].addEventListener('click',carusel,false);
